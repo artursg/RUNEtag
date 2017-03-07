@@ -203,7 +203,7 @@ public:
 
     inline void refine( const cv::Mat& gradient_x, const cv::Mat& gradient_y, const cv::Mat& intrinsics ) 
     {
-		throw std::exception("NOT IMPLEMENTED");
+		throw std::runtime_error("NOT IMPLEMENTED");
         /*
 		for( unsigned int i=0; i<code.size(); i++ ) 
         {
