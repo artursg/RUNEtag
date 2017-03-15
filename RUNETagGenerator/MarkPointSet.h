@@ -86,11 +86,11 @@ public:
 
 	bool addPointDistanceThreshold( const MarkPoint<T>& p, T size )
     {
-        std::vector< MarkPoint<T> >::const_iterator it = begin();
+        typename std::vector< MarkPoint<T> >::const_iterator it = begin();
 
         bool valid = true;
         while( it != end() ) {
-            if( it->distanceTo( p ) < threshold ) {
+	  if( it->distanceTo( p ) < 1 /*threshold*/ ) {
                 valid = false;
                 break;
             }
@@ -126,7 +126,7 @@ public:
 
 	MarkPoint<T> nearest_to( const MarkPoint<T>& other, double* out_dist = 0 ) const
     {
-        std::vector< MarkPoint<T> >::const_iterator it = begin();
+        typename std::vector< MarkPoint<T> >::const_iterator it = begin();
 
         MarkPoint<T>& nearest = const_cast< MarkPoint<T>& >( *it );
         T min_dist = other.distanceTo( *it );

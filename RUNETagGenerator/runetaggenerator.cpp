@@ -30,7 +30,7 @@
 template <typename T>
 inline void showEllipsesInScene( const MarkPointSet<T>& point_set, QGraphicsScene& scene ) {
 
-	std::vector< MarkPoint<T> >::const_iterator it = point_set.begin();
+	typename std::vector< MarkPoint<T> >::const_iterator it = point_set.begin();
 	
 	QBrush brush;
 	brush.setColor(Qt::black);
