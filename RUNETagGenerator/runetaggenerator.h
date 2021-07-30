@@ -2,6 +2,7 @@
 #define RUNETAGGENERATOR_H
 
 #include <QMainWindow>
+#include <QGraphicsScene>
 #include "ui_runetaggenerator.h"
 #include <MarkPointSet.h>
 #include "TagCode.h"
