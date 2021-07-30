@@ -4,7 +4,7 @@
 #include <iostream>
 #include "runetag.hpp"
 #include "auxrenderer.hpp"
-#include "VirtualCamera.h"
+#include "../virtualcamera/VirtualCamera.h"
 #include "ellipsefitter.hpp"
 
 #include "markerpose.hpp"
@@ -61,7 +61,7 @@ int main (int argc, char** argv)
 #endif
 
 
-    cv::rectangle( frame, cv::Point2i(600,0), cv::Point2i( 1000,600), CV_RGB(255,255,255), -1, CV_AA );
+    cv::rectangle( frame, cv::Point2i(600,0), cv::Point2i( 1000,600), CV_RGB(255,255,255), -1, cv::LINE_AA);
 
     double cx = intrinsics.at<double>(0,2);
     double cy = intrinsics.at<double>(1,2);
@@ -93,7 +93,7 @@ int main (int argc, char** argv)
         cv::runetag::AuxRenderer::drawEllipsePoint( dbgframe, ellipses.back(), intrinsics, CV_RGB(0,255,0));
     }
     cv::imwrite("ellipses.png", dbgframe );
-    /**/
+    **/
 
 
     std::vector< cv::runetag::MarkerDetected > tags_found;
