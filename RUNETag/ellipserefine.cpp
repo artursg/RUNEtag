@@ -27,10 +27,10 @@
 */
 
 //#include "precomp.hpp"
-#include <opencv2/core/core.hpp>
+#include <opencv4/opencv2/core/core.hpp>
 #include "ellipserefine.hpp"
 #include <iostream>
-#include <highgui.h>
+#include <opencv4/opencv2/highgui.h>
 #include <iostream>
 #include "ellipsedetector.hpp"
 #include "../include/auxrenderer.hpp"
