@@ -50,7 +50,7 @@ namespace runetag
         cv::Mat t;
     };
 
-    extern Pose findPose( const MarkerDetected& detected, const cv::Mat& intrinsics, const cv::Mat& distortion, bool* pose_ok = 0, unsigned int method=CV_ITERATIVE, unsigned int flag = 0 );
+    extern Pose findPose( const MarkerDetected& detected, const cv::Mat& intrinsics, const cv::Mat& distortion, bool* pose_ok = 0, unsigned int method=SOLVEPNP_ITERATIVE, unsigned int flag = 0 );
 
 } // namespace runetag
 } // namespace cv
