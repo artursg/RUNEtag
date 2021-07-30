@@ -3,12 +3,15 @@
  project(RUNETagGenerator)
 
  set(CMAKE_MODULE_PATH ${CMAKE_MODULE_PATH} ${CMAKE_CURRENT_SOURCE_DIR}/cmake-modules)
+ SET(OpenCV_DIR /lib/x86_64-linux-gnu/cmake/opencv4/)
+ set(CMAKE_EXPORT_COMPILE_COMMANDS ON)
  # Setup default installation dir
  #
  #IF(CMAKE_INSTALL_PREFIX_INITIALIZED_TO_DEFAULT)
  #SET( CMAKE_INSTALL_PREFIX "${PROJECT_SOURCE_DIR}/../../dist" CACHE PATH "Install prefix" FORCE )
  #ENDIF()
 
+ SET(CMAKE_BUILD_TYPE ON)
  if(NOT CMAKE_BUILD_TYPE STREQUAL "Debug")
      add_definitions(-DQT_NO_DEBUG)
  endif()
@@ -97,7 +100,7 @@
 
  target_link_libraries(RUNETagGenerator Qt5::Widgets Qt5::Gui Qt5::PrintSupport
 								  ${OpenCV_LIBS} 
-								  "${PROJECT_SOURCE_DIR}/../dist/lib/libRUNETag.a"
+                                  "${PROJECT_SOURCE_DIR}/../RUNETag/build/libRUNETag.a"
 								  ntl
 								  #${Boost_LIBRARIES} 
 								  #${QWT_LIBRARY}
