@@ -5,6 +5,9 @@ SET( CMAKE_ALLOW_LOOSE_LOOP_CONSTRUCTS TRUE )
 
 PROJECT( RUNETag )
 
+SET(OpenCV_DIR /lib/x86_64-linux-gnu/cmake/opencv4/)
+SET(CMAKE_EXPORT_COMPILE_COMMANDS on)
+
 OPTION( BUILD_SHARED_LIBS "Set to off to build static libraries" ON )
 OPTION( BUILD_RUNETAGDETECT "Create RUNEtagdetect executable" ON )
 OPTION( BUILD_CODEGEN "Create codegen executable" ON )
