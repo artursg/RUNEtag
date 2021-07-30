@@ -160,18 +160,18 @@ void RUNEtagdetect::test::occlusions::test_occlusions( const cv::runetag::Marker
 			cv::Mat dbgimg = input_img.clone();
 			
 			// Draw bbox 
-			cv::rectangle( dbgimg, cv::Point(bbox_xmin,bbox_ymin), cv::Point(bbox_xmax,bbox_ymax),CV_RGB(255,0,0),1,CV_AA);
+			cv::rectangle( dbgimg, cv::Point(bbox_xmin,bbox_ymin), cv::Point(bbox_xmax,bbox_ymax),CV_RGB(255,0,0),1,cv::LINE_AA);
 
 			// Draw occlusion box
-			cv::rectangle( dbgimg, occlusionbox,CV_RGB(255,255,0),CV_FILLED,CV_AA);
+			cv::rectangle( dbgimg, occlusionbox,CV_RGB(255,255,0),cv::FILLED,cv::LINE_AA);
 
 			for( std::vector< cv::Point >::const_iterator it=point_added.begin(); it!=point_added.end(); ++it )
 			{
-				cv::circle( dbgimg, *it, 5, CV_RGB(0,255,0),CV_FILLED, CV_AA );
+				cv::circle( dbgimg, *it, 5, CV_RGB(0,255,0),cv::FILLED, cv::LINE_AA);
 			}
 			for( std::vector< cv::Point >::const_iterator it=point_occluded.begin(); it!=point_occluded.end(); ++it )
 			{
-				cv::circle( dbgimg, *it, 5, CV_RGB(255,0,0),CV_FILLED, CV_AA );
+				cv::circle( dbgimg, *it, 5, CV_RGB(255,0,0),cv::FILLED, cv::LINE_AA);
 			}
 
 			cv::Mat dbgimg_scaled;
