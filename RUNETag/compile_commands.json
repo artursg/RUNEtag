@@ -1,0 +1,87 @@
+[
+{
+  "directory": "/home/iernstig/wiretronic/repos/RUNEtag/RUNETag/build",
+  "command": "/usr/bin/c++   -I/home/iernstig/wiretronic/repos/RUNEtag/RUNETag/include -isystem /usr/include/opencv4  -O3 -DNDEBUG   -o CMakeFiles/RUNETag.dir/auxmath.cpp.o -c /home/iernstig/wiretronic/repos/RUNEtag/RUNETag/auxmath.cpp",
+  "file": "/home/iernstig/wiretronic/repos/RUNEtag/RUNETag/auxmath.cpp"
+},
+{
+  "directory": "/home/iernstig/wiretronic/repos/RUNEtag/RUNETag/build",
+  "command": "/usr/bin/c++   -I/home/iernstig/wiretronic/repos/RUNEtag/RUNETag/include -isystem /usr/include/opencv4  -O3 -DNDEBUG   -o CMakeFiles/RUNETag.dir/auxrenderer.cpp.o -c /home/iernstig/wiretronic/repos/RUNEtag/RUNETag/auxrenderer.cpp",
+  "file": "/home/iernstig/wiretronic/repos/RUNEtag/RUNETag/auxrenderer.cpp"
+},
+{
+  "directory": "/home/iernstig/wiretronic/repos/RUNEtag/RUNETag/build",
+  "command": "/usr/bin/c++   -I/home/iernstig/wiretronic/repos/RUNEtag/RUNETag/include -isystem /usr/include/opencv4  -O3 -DNDEBUG   -o CMakeFiles/RUNETag.dir/ellipsefitter.cpp.o -c /home/iernstig/wiretronic/repos/RUNEtag/RUNETag/ellipsefitter.cpp",
+  "file": "/home/iernstig/wiretronic/repos/RUNEtag/RUNETag/ellipsefitter.cpp"
+},
+{
+  "directory": "/home/iernstig/wiretronic/repos/RUNEtag/RUNETag/build",
+  "command": "/usr/bin/c++   -I/home/iernstig/wiretronic/repos/RUNEtag/RUNETag/include -isystem /usr/include/opencv4  -O3 -DNDEBUG   -o CMakeFiles/RUNETag.dir/ellipsepoint.cpp.o -c /home/iernstig/wiretronic/repos/RUNEtag/RUNETag/ellipsepoint.cpp",
+  "file": "/home/iernstig/wiretronic/repos/RUNEtag/RUNETag/ellipsepoint.cpp"
+},
+{
+  "directory": "/home/iernstig/wiretronic/repos/RUNEtag/RUNETag/build",
+  "command": "/usr/bin/c++   -I/home/iernstig/wiretronic/repos/RUNEtag/RUNETag/include -isystem /usr/include/opencv4  -O3 -DNDEBUG   -o CMakeFiles/RUNETag.dir/fpscounter.cpp.o -c /home/iernstig/wiretronic/repos/RUNEtag/RUNETag/fpscounter.cpp",
+  "file": "/home/iernstig/wiretronic/repos/RUNEtag/RUNETag/fpscounter.cpp"
+},
+{
+  "directory": "/home/iernstig/wiretronic/repos/RUNEtag/RUNETag/build",
+  "command": "/usr/bin/c++   -I/home/iernstig/wiretronic/repos/RUNEtag/RUNETag/include -isystem /usr/include/opencv4  -O3 -DNDEBUG   -o CMakeFiles/RUNETag.dir/hirestimer.cpp.o -c /home/iernstig/wiretronic/repos/RUNEtag/RUNETag/hirestimer.cpp",
+  "file": "/home/iernstig/wiretronic/repos/RUNEtag/RUNETag/hirestimer.cpp"
+},
+{
+  "directory": "/home/iernstig/wiretronic/repos/RUNEtag/RUNETag/build",
+  "command": "/usr/bin/c++   -I/home/iernstig/wiretronic/repos/RUNEtag/RUNETag/include -isystem /usr/include/opencv4  -O3 -DNDEBUG   -o CMakeFiles/RUNETag.dir/markerdetector.cpp.o -c /home/iernstig/wiretronic/repos/RUNEtag/RUNETag/markerdetector.cpp",
+  "file": "/home/iernstig/wiretronic/repos/RUNEtag/RUNETag/markerdetector.cpp"
+},
+{
+  "directory": "/home/iernstig/wiretronic/repos/RUNEtag/RUNETag/build",
+  "command": "/usr/bin/c++   -I/home/iernstig/wiretronic/repos/RUNEtag/RUNETag/include -isystem /usr/include/opencv4  -O3 -DNDEBUG   -o CMakeFiles/RUNETag.dir/markerpose.cpp.o -c /home/iernstig/wiretronic/repos/RUNEtag/RUNETag/markerpose.cpp",
+  "file": "/home/iernstig/wiretronic/repos/RUNEtag/RUNETag/markerpose.cpp"
+},
+{
+  "directory": "/home/iernstig/wiretronic/repos/RUNEtag/RUNETag/build",
+  "command": "/usr/bin/c++   -I/home/iernstig/wiretronic/repos/RUNEtag/RUNETag/include -isystem /usr/include/opencv4  -O3 -DNDEBUG   -o CMakeFiles/RUNETag.dir/slotfitter.cpp.o -c /home/iernstig/wiretronic/repos/RUNEtag/RUNETag/slotfitter.cpp",
+  "file": "/home/iernstig/wiretronic/repos/RUNEtag/RUNETag/slotfitter.cpp"
+},
+{
+  "directory": "/home/iernstig/wiretronic/repos/RUNEtag/RUNETag/build",
+  "command": "/usr/bin/c++   -I/home/iernstig/wiretronic/repos/RUNEtag/RUNETag/include -isystem /usr/include/opencv4  -O3 -DNDEBUG   -o CMakeFiles/RUNETag.dir/ellipserefine.cpp.o -c /home/iernstig/wiretronic/repos/RUNEtag/RUNETag/ellipserefine.cpp",
+  "file": "/home/iernstig/wiretronic/repos/RUNEtag/RUNETag/ellipserefine.cpp"
+},
+{
+  "directory": "/home/iernstig/wiretronic/repos/RUNEtag/RUNETag/build",
+  "command": "/usr/bin/c++   -I/home/iernstig/wiretronic/repos/RUNEtag/RUNETag/include -isystem /usr/include/opencv4  -O3 -DNDEBUG   -o CMakeFiles/RUNETag.dir/ellipsedetector.cpp.o -c /home/iernstig/wiretronic/repos/RUNEtag/RUNETag/ellipsedetector.cpp",
+  "file": "/home/iernstig/wiretronic/repos/RUNEtag/RUNETag/ellipsedetector.cpp"
+},
+{
+  "directory": "/home/iernstig/wiretronic/repos/RUNEtag/RUNETag/build",
+  "command": "/usr/bin/c++   -I/home/iernstig/wiretronic/repos/RUNEtag/RUNETag/include -isystem /usr/include/opencv4  -O3 -DNDEBUG   -o CMakeFiles/RUNETag.dir/digitalmarkermodel.cpp.o -c /home/iernstig/wiretronic/repos/RUNEtag/RUNETag/digitalmarkermodel.cpp",
+  "file": "/home/iernstig/wiretronic/repos/RUNEtag/RUNETag/digitalmarkermodel.cpp"
+},
+{
+  "directory": "/home/iernstig/wiretronic/repos/RUNEtag/RUNETag/build",
+  "command": "/usr/bin/c++   -I/home/iernstig/wiretronic/repos/RUNEtag/RUNETag/include -isystem /usr/include/opencv4  -O3 -DNDEBUG   -o CMakeFiles/RUNETag.dir/slot.cpp.o -c /home/iernstig/wiretronic/repos/RUNEtag/RUNETag/slot.cpp",
+  "file": "/home/iernstig/wiretronic/repos/RUNEtag/RUNETag/slot.cpp"
+},
+{
+  "directory": "/home/iernstig/wiretronic/repos/RUNEtag/RUNETag/build",
+  "command": "/usr/bin/c++   -I/home/iernstig/wiretronic/repos/RUNEtag/RUNETag/include -isystem /usr/include/opencv4  -O3 -DNDEBUG   -o CMakeFiles/RUNETag.dir/coding.cpp.o -c /home/iernstig/wiretronic/repos/RUNEtag/RUNETag/coding.cpp",
+  "file": "/home/iernstig/wiretronic/repos/RUNEtag/RUNETag/coding.cpp"
+},
+{
+  "directory": "/home/iernstig/wiretronic/repos/RUNEtag/RUNETag/build/RUNEtagdetect",
+  "command": "/usr/bin/c++  -DBOOST_ALL_NO_LIB -I/home/iernstig/wiretronic/repos/RUNEtag/RUNETag/include -I/home/iernstig/wiretronic/repos/RUNEtag/RUNETag/RUNEtagdetect/. -I/home/iernstig/wiretronic/repos/RUNEtag/RUNETag/RUNEtagdetect/../include -isystem /usr/include/opencv4  -O3 -DNDEBUG   -o CMakeFiles/RUNEtagdetect.dir/RUNEtagdetect.cpp.o -c /home/iernstig/wiretronic/repos/RUNEtag/RUNETag/RUNEtagdetect/RUNEtagdetect.cpp",
+  "file": "/home/iernstig/wiretronic/repos/RUNEtag/RUNETag/RUNEtagdetect/RUNEtagdetect.cpp"
+},
+{
+  "directory": "/home/iernstig/wiretronic/repos/RUNEtag/RUNETag/build/RUNEtagdetect",
+  "command": "/usr/bin/c++  -DBOOST_ALL_NO_LIB -I/home/iernstig/wiretronic/repos/RUNEtag/RUNETag/include -I/home/iernstig/wiretronic/repos/RUNEtag/RUNETag/RUNEtagdetect/. -I/home/iernstig/wiretronic/repos/RUNEtag/RUNETag/RUNEtagdetect/../include -isystem /usr/include/opencv4  -O3 -DNDEBUG   -o CMakeFiles/RUNEtagdetect.dir/test_occlusion.cpp.o -c /home/iernstig/wiretronic/repos/RUNEtag/RUNETag/RUNEtagdetect/test_occlusion.cpp",
+  "file": "/home/iernstig/wiretronic/repos/RUNEtag/RUNETag/RUNEtagdetect/test_occlusion.cpp"
+},
+{
+  "directory": "/home/iernstig/wiretronic/repos/RUNEtag/RUNETag/build/codegen",
+  "command": "/usr/bin/c++   -I/home/iernstig/wiretronic/repos/RUNEtag/RUNETag/include -I/home/iernstig/wiretronic/repos/RUNEtag/RUNETag/codegen/. -I/home/iernstig/wiretronic/repos/RUNEtag/RUNETag/codegen/../include -isystem /usr/include/opencv4  -O3 -DNDEBUG   -o CMakeFiles/codegen.dir/codegen.cpp.o -c /home/iernstig/wiretronic/repos/RUNEtag/RUNETag/codegen/codegen.cpp",
+  "file": "/home/iernstig/wiretronic/repos/RUNEtag/RUNETag/codegen/codegen.cpp"
+}
+]
