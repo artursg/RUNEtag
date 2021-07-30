@@ -25,6 +25,8 @@
 
 #include <opencv2/core/core.hpp>
 #include <opencv2/highgui/highgui.hpp>
+#include <opencv2/core/types_c.h>
+#include <opencv2/videoio/videoio_c.h>
 
 #include <boost/program_options.hpp>
 #include <iostream>
@@ -243,7 +245,7 @@ int main (int argc, char** argv)
         {
 			std::string intrinsics_filename = varmap["intrinsicsfile"].as<std::string>();
 			try {
-				intrinsics = cv::cvarrToMat( cvLoad( intrinsics_filename.c_str() ), true );				
+				// intrinsics = cv::cvarrToMat( cvLoad( intrinsics_filename.c_str() ), true );				
 			} catch( cv::Exception e ) {
 				std::cout << "Unable to load " << intrinsics_filename << ", aborting" << std::endl;
 				return -1;
@@ -294,7 +296,7 @@ int main (int argc, char** argv)
         {
 			std::string distortion_filename = varmap["distortionfile"].as<std::string>();
 			try {
-				distortion = cv::cvarrToMat( cvLoad( distortion_filename.c_str() ), true );
+				//distortion = cv::cvarrToMat( cvLoad( distortion_filename.c_str() ), true );
 				
 				std::cout << "+ Distortion coefficients: " << std::endl;
 				std::cout << "    " << distortion << std::endl;
@@ -433,7 +435,7 @@ int main (int argc, char** argv)
         {
             cv::RotatedRect rr = foundEllipses[i];
             rr.angle=-rr.angle;
-            cv::ellipse( dbgout, rr, CV_RGB(255,0,0),1,CV_AA );
+            cv::ellipse( dbgout, rr, CV_RGB(255,0,0),1,cv::LINE_AA);
         }
 
         std::cout << "> Rendering ellipses" << std::endl;
@@ -462,7 +464,7 @@ int main (int argc, char** argv)
 
 		// Sobel
 		cv::Mat input_image_gray;
-		cv::cvtColor( input_image, input_image_gray, CV_RGB2GRAY );
+		cv::cvtColor( input_image, input_image_gray, cv::COLOR_RGB2GRAY);
 
 		cv::Mat input_image_smooth;
 		if( gauss_smooth_sigma > 0.0f )
@@ -485,7 +487,7 @@ int main (int argc, char** argv)
 		cv::waitKey(0);*/
 		
 		cv::Mat dbgimg;
-		cv::cvtColor( input_image_smooth,dbgimg,CV_GRAY2RGB );
+		cv::cvtColor( input_image_smooth,dbgimg,cv::COLOR_GRAY2RGB);
 		
 		size_t num_refined = 0;
 		for( size_t i=0; i<tags_found.size(); ++i )
@@ -541,7 +543,8 @@ int main (int argc, char** argv)
 		if(pnprefine)
 			flags |= cv::runetag::FLAG_REFINE;
 
-		cv::runetag::Pose RT = cv::runetag::findPose( tags_found[i], intrinsics, distortion, &poseok, method==0?CV_ITERATIVE:CV_EPNP, flags);
+		cv::runetag::Pose RT = cv::runetag::findPose( 
+                tags_found[i], intrinsics, distortion, &poseok, method==0?cv::SOLVEPNP_ITERATIVE:cv::SOLVEPNP_EPNP, flags);
 
         if( poseok )
         {
