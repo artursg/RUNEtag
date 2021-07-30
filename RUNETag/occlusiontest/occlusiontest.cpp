@@ -4,7 +4,7 @@
 #include <iostream>
 #include "runetag.hpp"
 #include "auxrenderer.hpp"
-#include "VirtualCamera.h"
+#include "../virtualcamera/VirtualCamera.h"
 #include "ellipsefitter.hpp"
 
 #include "markerpose.hpp"
