@@ -41,18 +41,18 @@ unsigned int EllipseDetector::detectEllipses( const cv::Mat& frame, std::vector<
 
     // Conversion of the RGB image to GRAYSCALE
     cv::Mat grayframe( frame.rows, frame.cols, CV_8UC1 );
-    cv::cvtColor( frame, grayframe, CV_RGB2GRAY );
+    cv::cvtColor( frame, grayframe, cv::COLOR_RGB2GRAY);
 
     //cv::adaptiveThreshold( grayframe, aux, 255, CV_ADAPTIVE_THRESH_MEAN_C, CV_THRESH_BINARY, 127 , 30);
     //cv::threshold( grayframe, aux, 100 , 255, cv::THRESH_BINARY );
     // Threshold
     cv::Mat thresholded;
-    cv::adaptiveThreshold( grayframe, thresholded, 255, CV_ADAPTIVE_THRESH_MEAN_C, CV_THRESH_BINARY, 127 , 15);
+    cv::adaptiveThreshold( grayframe, thresholded, 255, cv::ADAPTIVE_THRESH_MEAN_C, cv::THRESH_BINARY, 127 , 15);
 
     // Detect image contours as a vector of Point
     std::vector< std::vector< cv::Point > > contours;
     std::vector< cv::Vec4i > h;
-    cv::findContours( thresholded, contours, h, CV_RETR_LIST, CV_CHAIN_APPROX_NONE );
+    cv::findContours( thresholded, contours, h,cv::RETR_LIST,  cv::CHAIN_APPROX_NONE );
 
     for( std::vector< std::vector< cv::Point > >::const_iterator it = contours.begin(); it != contours.end(); ++it ) 
     {
@@ -149,11 +149,11 @@ unsigned int EllipseDetector::detectEllipses( const cv::Mat& frame, std::vector<
 
         detected.push_back( ellipse );
         ++num_detected;
-        //cv::ellipse( cv::Mat(frame), ellipse.center, cv::Size( ellipse.size.width/2.0, ellipse.size.height/2.0 ), ellipse.angle, 0, 360, CV_RGB(255,0,0), 1 );
+        //cv::ellipse( cv::Mat(frame), ellipse.center, cv::Size( ellipse.size.width/2.0, ellipse.size.height/2.0 ), ellipse.angle, 0, 360, (255,0,0), 1 );
 
         /*
         for( unsigned int k=0; k<contour_points.size(); k++ ) {
-            cv::circle( cv::Mat(frame), contour_points[k], 1, CV_RGB(0,255,0), 1);
+            cv::circle( cv::Mat(frame), contour_points[k], 1, (0,255,0), 1);
         }*/
     }
 
