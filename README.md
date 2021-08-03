@@ -38,6 +38,29 @@ RUNETag uses the following third-party libraries:
 
 Additionally, to build the library you will need [CMake](www.cmake.org) version 2.8 or higher.
 
+### UBUNTU 20.04 - build instructions
+#### 1. Install dependencies
+```
+sudo apt install libopencv-dev libntl-dev libboost-all-dev qt5-default
+```
+#### 2. Ensure that you got the path to the opencv cmake instructions
+You need to set the `OpenCV_DIR` variable in the CMakeLists.txt in both subdirectiories 
+in order to be able to link opencv properly. I found it here:
+```
+SET(OpenCV_DIR /lib/x86_64-linux-gnu/cmake/opencv4/)
+```
+
+#### 3. Build
+First, build the generation by 
+```
+cd RUNETagGenerator 
+mkdir build 
+cd build
+cmake ..
+make
+```
+
+Then do the same procedure for RUNETag directory.
 
 ### Basic steps to get started with RUNETags
 
