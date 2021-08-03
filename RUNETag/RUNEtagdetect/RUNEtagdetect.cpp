@@ -38,6 +38,7 @@
 #include "coding.h"
 
 
+
 #define ENABLE_TESTS
 
 
@@ -57,11 +58,8 @@ namespace po = boost::program_options;
 int main (int argc, char** argv)
 {
 
-    std::cout << " _________________________________________________________" << std::endl;
-    std::cout << "|                                                         |"<<std::endl;
-    std::cout << "|      RUNEtag detector                                   |" << std::endl;
-    std::cout << "|                                                         |"<<std::endl;
-    std::cout << " \\________________________________________________________|" << std::endl;
+    std::cout << "█▀█ █░█ █▄░█ █▀▀ ▀█▀ ▄▀█ █▀▀   █▀▄ █▀▀ ▀█▀ █▀▀ █▀▀ ▀█▀ █▀█ █▀█" << std::endl;
+    std::cout << "█▀▄ █▄█ █░▀█ ██▄ ░█░ █▀█ █▄█   █▄▀ ██▄ ░█░ ██▄ █▄▄ ░█░ █▄█ █▀▄" << std::endl;
     std::cout << std::endl;
 
 
